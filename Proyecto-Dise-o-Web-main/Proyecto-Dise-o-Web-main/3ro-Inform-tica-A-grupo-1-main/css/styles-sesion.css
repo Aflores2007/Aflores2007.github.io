@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #00A8E8, #007EA7);
+}
+
+.login-container {
+    display: flex;
+    width: 60%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative; /* Para posicionar la flecha */
+}
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-arrow img.back-btn {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.back-arrow img.back-btn:hover {
+    transform: scale(1.1);
+}
+
+.login-box {
+    width: 50%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.login-box img.logo {
+    width: 150px;
+    margin-bottom: 1em;
+
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.input-group img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Estilo para el placeholder en negrita */
+::placeholder {
+    font-weight: bold;
+    color: #333;
+    opacity: 1;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+input[type="submit"].login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007EA7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	font-weight: bold;
+    color: #ffffff;
+    opacity: 1;
+}
+
+input[type="submit"].login-btn:hover {
+    background-color: #005f80;
+}
+
+.robot-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007EA7;
+}
+
+.robot-section img.robot {
+    width: 80%;
+} 

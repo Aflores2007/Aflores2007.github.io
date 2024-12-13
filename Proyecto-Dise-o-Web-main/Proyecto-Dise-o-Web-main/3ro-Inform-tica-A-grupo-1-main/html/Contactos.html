@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Celu Tech</title>
+    <link rel="stylesheet" href="../css/styles-contactos.css">
+    <style>
+        /* Estilos para los bordes redondeados */
+        input, textarea, button {
+            border-radius: 15px; /* Bordes redondeados */
+            border: 1px solid #ccc; /* Borde de color gris claro */
+            padding: 10px; /* Espaciado interno */
+            width: 100%; /* Ocupa todo el ancho del contenedor */
+            box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../fotos/logo.png" alt="Celu Tech">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Accesorios.html">Accesorios</a></li>
+                <li><a href="Acerca.html">Acerca de Nosotros</a></li>
+                <li><a href="Eventos.html">Eventos</a></li>
+                <li><a href="Contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="user-icon">
+            <a href="Sesion.html"><img src="../fotos/usuario.png" alt="User Icon"></a>
+        </div>
+    </header>
+    <main>
+        <div class="contact-form">
+            <form action="#">
+                <div class="left-column">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="id-number">Nro Cdla:</label>
+                    <input type="text" id="id-number" name="id-number">
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="right-column">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address">
+
+                    <label for="hours">Horario De Atención:</label>
+                    <input type="text" id="hours" name="hours">
+
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="location">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13409.844569884423!2d-79.93144654462672!3d-2.23961405405868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d710009e8bad5%3A0xc0831b3fca4ae562!2sCERVEZAS%20TERE!5e0!3m2!1ses!2sec!4v1726856517420!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    
+</body>
+<footer>
+    <div class="information">
+        <h3>Information</h3>
+        <ul>
+            <li><a href="#"><img src="../fotos/X.png" alt="X"></a></li>
+            <li><a href="#"><img src="../fotos/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="../fotos/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="../fotos/Wasss.png" alt="WhatsApp"></a></li>
+        </ul>
+    </div>
+    <div class="devices">
+        <h3>Dispositivos</h3>
+        <ul>
+            <li><a href="#">Publicaciones</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </div>
+    <div class="about-us">
+        <h3>Conócenos</h3>
+        <ul>
+            <li><a href="#">Trabaja en Celu Tech</a></li>
+            <li><a href="#">Acerca de Celu Tech</a></li>
+        </ul>
+    </div>
+</footer>
+</html>

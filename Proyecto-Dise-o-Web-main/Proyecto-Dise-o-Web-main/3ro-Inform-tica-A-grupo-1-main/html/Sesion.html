@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../css/styles-sesion.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="back-arrow">
+            <img src="../fotos/Flecha.png" alt="Flecha Atrás" class="back-btn" onclick="goBack()">
+        </div>
+        <div class="login-box">
+            <img src="../fotos/logo-sesion.png" alt="Logo CELUTECH" class="logo">
+            <h1>Inicia Tu Cuenta</h1>
+
+            <form id="loginForm" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <img src="../fotos/icono-usuario.png" alt="Icono usuario">
+                    <input type="text" name="txtusuario" id="txtusuario" placeholder="Ingresa tu Usuario" required>
+                </div>
+                
+                <div class="input-group">
+                    <img src="../fotos/candado.png" alt="Icono contraseña">
+                    <input type="password" name="txtpassword" id="txtpassword" placeholder="Ingresa tu Contraseña" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" onclick="verpassword()"> Mostrar contraseña
+                </div>
+
+                <input type="submit" value="Iniciar Sesión" class="login-btn">
+            </form>
+        </div>
+
+        <div class="robot-section">
+            <img src="../fotos/robot.png" alt="Robot" class="robot">
+        </div>
+    </div>
+    <script src="../java/java-sesion.js"></script>
+</body>
+</html>

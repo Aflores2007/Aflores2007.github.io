@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celutech</title>
+    <link rel="stylesheet" href="../css/styles-index.css">
+    <style>
+        /* Estilo para la imagen que va a rotar y subir */
+        .animated-phone {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            width: 150px;
+            transform: rotate(0deg);
+        }
+
+        @keyframes riseAndRotate {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(600px, -500px) rotate(360deg);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <div class="menu">
+        <div class="logo">
+            <img src="../fotos/logo.png" alt="Celutech Logo">
+        </div>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Accesorios.html">Accesorios</a></li>
+            <li><a href="Acerca.html">Acerca de Nosotros</a></li>
+            <li><a href="Eventos.html">Eventos</a></li>
+            <li><a href="Contactos.html">Contacto</a></li>
+        </ul>
+        <div class="user-icon">
+            <a href="Sesion.html"><img src="../fotos/usuario.png" alt="User Icon"></a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <!-- Sección principal con el logo y eslogan -->
+        <section class="content about">
+            <h2 class="title">CELU TECH</h2>
+            <img src="../fotos/Celular.png" alt="Celular">
+            <p>“Conectando el futuro: tecnología avanzada en la palma de tu mano.”</p>
+        </section>
+
+        <!-- Sección de dispositivos -->
+        <section class="content saucers">
+            <h2 class="title">Dispositivos</h2>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="../fotos/Imagen 3.png" alt="Celulares más vendidos">
+                        <figcaption>CELULARES MÁS VENDIDOS</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="../fotos/Imagen 1.png" alt="Dispositivos a menos de $100">
+                        <figcaption>DISPOSITIVOS A MENOS DE $100</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="../fotos/Imagen 2.png" alt="Dispositivos para hogar">
+                        <figcaption>DISPOSITIVOS PARA HOGAR</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Imagen del celular animado -->
+        <img src="../fotos/Celular.png" alt="Celular animado" class="animated-phone" id="animatedPhone">
+
+    </div>
+
+    <!-- Script para la animación -->
+    <script>
+        // Iniciar la animación después de 1 segundo
+        setTimeout(() => {
+            const phone = document.getElementById('animatedPhone');
+            phone.style.animation = 'riseAndRotate 5s ease forwards';
+        }, 1000);
+    </script>
+</body>
+
+</html>
